@@ -1,31 +1,36 @@
 div {
-    background-color: indianred;
+    background-color: grey
     margin-left: 100px;
     margin-right: 500px; 
     border-block-end-color: rgb(158, 95, 160);
-    border-block-end-style: groove;
-    border-block-start-style: initial;
-    
+  
 }
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: burlywood;
+    color: rgb(102, 94, 83);
     margin-left: 100px;
     margin-right: 500px; 
     text-align: center;
+    background-color: forestgreen
 }
 
 #paragrafo1 {
-    color: gold;
-    background-color: blueviolet;
-    text-align: center;
-    
+    color: dimgrey;
+    background-color: forestgreen;
+    text-align: center;    
 }
 
 #paragrafo2 {
-    color: blue;
-   
+    color: dimgrey;
+    background-color: forestgreen;
+    text-align: center;    
+}
+
+#paragrafo3 {
+    color: dimgrey;
+    background-color: forestgreen;
+    text-align: center;   
 }
 
 .alerta {
@@ -33,6 +38,3 @@ h1 {
     margin-left: 100px;
     margin-right: 500px; 
 }
-
-    
-
