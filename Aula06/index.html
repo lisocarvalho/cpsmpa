@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Aula 06 - Array, Loop For & Function </title> 
+</head>
+<body>
+        <h4>Estado do Sudeste</h4>
+        <div id="resultado"></div>
+        <div id+"valor hora"></div>
+        
+        <script>
+    
+        function AdicionalNoturno(quantidade) {
+            if (quantidade=="1") {
+                return "valor hora"; 
+                } else if (quantidade=="2") {
+                    return "valor hora";  
+                }
+            }
+
+            var horadiurna = 90;
+            var adicional = 0,2;
+            var Total= 0;
+
+            Total = horadiurna*adicional*quantidade;
+            document.getElementById("valor hora").innerHTML = Total;
+
+
+
+
+
+            //ARRAY é uma variável que contem vários valores de um mesmo tipo/categoria
+            var sudeste = ["SP","RJ","MG","ES"];
+            console.log(sudeste);
+        
+        var texto = "";
+        var i;
+        
+        //LOOP
+        //FOR
+        //Usado quando é necessário fazer várias tarefas repetidas
+        for (i=0; i<sudeste.length; i++) {
+            texto = texto + "Estado: " + sudeste[i] + " - " + getNomeDoEstado(sudeste[i]) + "<br>";
+        }
+        
+        document.getElementById("resultado").innerHTML = texto;
+
+
+            //FUNCTION são funções que realizam cálculo ou ações que podem diferentes dos pogramas
+        
+            function getNomeDoEstado(sigla) {
+            if (sigla=="SP" || sigla=="sp") {
+                return "São Paulo"; 
+                } else if (sigla=="RJ") {
+                    return "Rio de Janeiro";  
+                } else if (sigla=="MG") {
+                    return "Minas Gerais";                
+                } else if (sigla=="ES"){
+                    return "Espírito Santo";
+                } else {
+                    return "Não conheço esse Estado";
+                }
+            }
+
+            //ARRAY é uma variável que contem vários valores de um mesmo tipo/categoria
+            var sudeste = ["SP","RJ","MG","ES"];
+            console.log(sudeste);
+        
+        var texto = "";
+        var i;
+        
+        //LOOP
+        //FOR
+        //Usado quando é necessário fazer várias tarefas repetidas
+        for (i=0; i<sudeste.length; i++) {
+            texto = texto + "Estado: " + sudeste[i] + " - " + getNomeDoEstado(sudeste[i]) + "<br>";
+        }
+        
+        document.getElementById("resultado").innerHTML = texto;
+
+</script>
+</body>
+</html>

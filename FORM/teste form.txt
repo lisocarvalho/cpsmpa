@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cálculo Décimo Terceiro</h2>
+
+    <script >
+
+        function id(valor_campo)
+        {
+            return document.getElementById(valor_campo);
+        }
+        function getValor (valor_campo)
+        {
+            var valor = document.getElementById(valor_campo).value;
+            /*docuemnt.write ("Valor: " +valor);*/
+            return parseFloat( valor ) * 12;
+        }
+        function  multiplica ()
+        {
+            var total = getValor ("valor1") * getValor ("valor2");
+            id ("resultado").value = total;
+        }
+           
+    
+    </script>
+
+        <form name="formulário">
+            valor 1  <input name="valor1" id="valor1" > <br> <br>
+            valor 2  <input name="valor2" id="valor2" onblur="multiplica"> <br> <br>
+            resultado <input name="resultado" readonly id="resultado"> <br> <br>
+            <input type="submit" value="calcular"> 
+        </form>
+</body>
+</html>
